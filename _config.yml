@@ -1,6 +1,7 @@
 # Site settings
 title: Jason Plojo's GitHub Pages
 email: jason.plojo@gmail.com
+description:  This website has been generated for Live Blogging the RoboSub 2015 competition. It will eventually become a website featuring projects in the near future.
 baseurl: "" # the subpath of your site, e.g. /blog/
 github_username: jasonplojo 
 
