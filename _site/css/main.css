@@ -161,15 +161,28 @@ pre {
     color: #424242; }
 
 .site-nav {
-  line-height: 56px;
-  position: relative; }
+  line-height: 30px;
+  position: relative;
+  border-bottom: 1px dotted #e8e8e8; }
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
     color: #111;
     line-height: 1.5; }
-    .site-nav .page-link:not(:first-child) {
-      margin-left: 20px; }
+    .site-nav .page-link:visited {
+      color: #111; }
+    .site-nav .page-link:hover {
+      color: #006699;
+      border-top: 2px double #006699;
+      border-left: 2px double #006699;
+      border-right: 2px double #006699;
+      padding-left: 18px;
+      padding-right: 18px; }
+    .site-nav .page-link {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 6px;
+      padding-bottom: 8px; }
   @media screen and (max-width: 600px) {
     .site-nav {
       position: absolute;

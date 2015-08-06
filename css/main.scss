@@ -8,6 +8,14 @@ $base-font-family:    Helvetica, Arial, sans-serif;
 $base-font-size:      14px;
 
 // Nav
+$nav-line-height:          30px;
+$nav-link-color:           #006699;
+$nav-link-border-size:     2px; 
+$nav-link-border-style:    double;  
+$nav-link-padding:         20px;
+$nav-link-padding-top:     $nav-line-height - 24px;
+$nav-link-padding-bottom:  $nav-line-height - 22px;
+$nav-link-padding-border:  $nav-link-padding - $nav-link-border-size; 
 
 // Post
 $post-width:          100%;

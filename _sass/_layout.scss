@@ -24,8 +24,9 @@
 }
 
 .site-nav {
-    line-height: 56px;
+    line-height: $nav-line-height;
     position: relative;
+    border-bottom: 1px dotted $grey-color-light;
 
     .menu-icon {
         display: none;
@@ -35,9 +36,25 @@
         color: $text-color;
         line-height: $base-line-height;
 
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
+	&:visited {
+	    color: $text-color;
+	}
+
+	&:hover {
+	    color: #006699;
+	    border-top: $nav-link-border-size $nav-link-border-style $nav-link-color;
+	    border-left: $nav-link-border-size $nav-link-border-style $nav-link-color;
+	    border-right: $nav-link-border-size $nav-link-border-style $nav-link-color;
+	    padding-left: $nav-link-padding-border;
+	    padding-right: $nav-link-padding-border;
+	}
+        
+	// Gaps between nav items
+        & {
+	    padding-left: $nav-link-padding;
+	    padding-right: $nav-link-padding;
+	    padding-top: $nav-link-padding-top;
+	    padding-bottom: $nav-link-padding-bottom;
         }
     }
 
