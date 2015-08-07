@@ -36,8 +36,25 @@
         color: $text-color;
         line-height: $base-line-height;
 
+	.active {
+	    color: #FFFFFF;
+	    background-color: #006699;
+	    border-top: $nav-link-border-size $nav-link-border-style $nav-link-color;
+	    border-left: $nav-link-border-size $nav-link-border-style $nav-link-color;
+	    border-left: $nav-link-border-size $nav-link-border-style $nav-link-color;
+	    padding-left: $nav-link-padding-border;
+	    padding-right: $nav-link-padding-border;
+	    padding-top: $nav-link-padding-top;
+	    padding-bottom: $nav-link-padding-bottom;
+	}
+	
+	&,
 	&:visited {
 	    color: $text-color;
+	    padding-left: $nav-link-padding;
+	    padding-right: $nav-link-padding;
+	    padding-top: $nav-link-padding-top;
+	    padding-bottom: $nav-link-padding-bottom;
 	}
 
 	&:hover {
@@ -48,14 +65,6 @@
 	    padding-left: $nav-link-padding-border;
 	    padding-right: $nav-link-padding-border;
 	}
-        
-	// Gaps between nav items
-        & {
-	    padding-left: $nav-link-padding;
-	    padding-right: $nav-link-padding;
-	    padding-top: $nav-link-padding-top;
-	    padding-bottom: $nav-link-padding-bottom;
-        }
     }
 
     @include media-query($on-palm) {

@@ -169,20 +169,29 @@ pre {
   .site-nav .page-link {
     color: #111;
     line-height: 1.5; }
-    .site-nav .page-link:visited {
-      color: #111; }
-    .site-nav .page-link:hover {
-      color: #006699;
-      border-top: 2px double #006699;
-      border-left: 2px double #006699;
-      border-right: 2px double #006699;
+    .site-nav .page-link .active {
+      color: #FFFFFF;
+      background-color: #006699;
+      border-top: 2px double #333333;
+      border-left: 2px double #333333;
+      border-left: 2px double #333333;
       padding-left: 18px;
-      padding-right: 18px; }
-    .site-nav .page-link {
+      padding-right: 18px;
+      padding-top: 6px;
+      padding-bottom: 8px; }
+    .site-nav .page-link, .site-nav .page-link:visited {
+      color: #111;
       padding-left: 20px;
       padding-right: 20px;
       padding-top: 6px;
       padding-bottom: 8px; }
+    .site-nav .page-link:hover {
+      color: #006699;
+      border-top: 2px double #333333;
+      border-left: 2px double #333333;
+      border-right: 2px double #333333;
+      padding-left: 18px;
+      padding-right: 18px; }
   @media screen and (max-width: 600px) {
     .site-nav {
       position: absolute;
