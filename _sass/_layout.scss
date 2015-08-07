@@ -33,15 +33,14 @@
     }
 
     .page-link {
-        color: $text-color;
         line-height: $base-line-height;
-
-	.active {
-	    color: #FFFFFF;
-	    background-color: #006699;
+    
+	&.active {
+	    color: $nav-active-font-color;
+	    background-color: $nav-active-background-color;
 	    border-top: $nav-link-border-size $nav-link-border-style $nav-link-color;
 	    border-left: $nav-link-border-size $nav-link-border-style $nav-link-color;
-	    border-left: $nav-link-border-size $nav-link-border-style $nav-link-color;
+	    border-right: $nav-link-border-size $nav-link-border-style $nav-link-color;
 	    padding-left: $nav-link-padding-border;
 	    padding-right: $nav-link-padding-border;
 	    padding-top: $nav-link-padding-top;
@@ -58,14 +57,15 @@
 	}
 
 	&:hover {
-	    color: #006699;
 	    border-top: $nav-link-border-size $nav-link-border-style $nav-link-color;
 	    border-left: $nav-link-border-size $nav-link-border-style $nav-link-color;
 	    border-right: $nav-link-border-size $nav-link-border-style $nav-link-color;
 	    padding-left: $nav-link-padding-border;
 	    padding-right: $nav-link-padding-border;
 	}
+
     }
+
 
     @include media-query($on-palm) {
         position: absolute;
