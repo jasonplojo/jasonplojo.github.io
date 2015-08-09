@@ -10,15 +10,18 @@
   </a>
 
   {% assign currentPage = page.url %}
-  {% assign currentID = page.id %}
+  {% assign currentID   = page.id %}
+  {% assign isProject   = page.project %}
 
   <div class="trigger">
     {% for page in site.pages %}
-      {% if currentPage == page.url and page.title %}
+      {% if currentPage == page.url and page.title and page.project == false %}
 	<active class="page-link active">{{ page.title }}</active>
-      {% elsif currentID and page.url == '/blog/' %}
+      {% elsif currentID and page.url == '/blog/' and page.project == false %}
 	<active class="page-link active">{{ page.title }}</active>
-      {% elsif page.title %}
+      {% elsif isProject and page.url == '/projects/' %}
+	<active class="page-link active">{{ page.title }}</active>
+      {% elsif page.title and page.project == false %}
       	<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
       {% endif %}
     {% endfor %}
