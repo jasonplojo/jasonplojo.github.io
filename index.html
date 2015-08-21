@@ -9,7 +9,7 @@ type: index
 
   <ul class="post-list">
    {% for page in site.pages %}
-     {% if page.project %}
+     {% if page.type == 'projects' and page.mainnav != false %}
        <li>
          <h2> <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
        </li>

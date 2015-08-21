@@ -9,14 +9,14 @@
     </svg>
   </a>
 
- {% assign pageType = page.type %}
+ {% assign currentType = page.type %}
 
   <div class="trigger">
     {% for page in site.pages %}
-      {% if pageType == 'about' %}
-      {% elsif pageType == 'blog' %}
-      {% elsif pageType == 'index' %}
-      {% elsif pageType == 'projects' %}
+      {% if page.subtitle %}
+	{% if currentType == 'projects' %}
+	  <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.subtitle }}</a>
+	{% endif %}
       {% endif %}
     {% endfor %}
   </div>

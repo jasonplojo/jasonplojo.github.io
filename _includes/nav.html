@@ -13,10 +13,12 @@
 
   <div class="trigger">
     {% for page in site.pages %}
-      {% if page.title and page.type == currentType %}
-	<active class="page-link active">{{ page.title }}</active>
-      {% elsif page.title %}
-      	<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      {% if page.title and page.mainnav %}
+	{% if page.type == currentType %}
+	  <active class="page-link active">{{ page.title }}</active>
+	{% else %}
+	  <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+	{% endif %}
       {% endif %}
     {% endfor %}
   </div>
